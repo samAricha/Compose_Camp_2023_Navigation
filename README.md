@@ -27,3 +27,27 @@ NavHost(navController = navController, startDestination = "home") {
     }
     // Add more destinations as needed
 }
+
+Navigation Basics
+Destinations: Represent individual screens or composables.
+Actions: Define transitions or events triggering navigation.
+Graph: Central hub managing navigation logic.
+Usage
+Navigate Between Screens:
+
+kotlin
+Copy code
+navController.navigate("profile/123")
+Pass Data Between Screens:
+
+kotlin
+Copy code
+composable("profile/{userId}") { backStackEntry ->
+    val userId = backStackEntry.arguments?.getString("userId")
+    ProfileScreen(userId = userId)
+}
+License
+This project is licensed under the MIT License.
+
+Acknowledgments
+Special thanks to the Jetpack Compose community for their contributions and support.
