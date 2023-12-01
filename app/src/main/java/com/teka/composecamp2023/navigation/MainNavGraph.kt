@@ -29,7 +29,7 @@ fun MainNavGraph(
         }
 
         composable(
-            route = ScreenRoutes.WalletScreen.route
+            route = ScreenRoutes.ProfileScreen.route
         ){
             ProfileScreen(navController = navController)
         }

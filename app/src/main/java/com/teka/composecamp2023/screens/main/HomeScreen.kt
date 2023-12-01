@@ -26,7 +26,7 @@ fun HomeScreen(
     Scaffold(
         topBar = {
                 Text(
-                    text = "Wallet",
+                    text = "HomeScreen",
                     fontWeight = FontWeight.Bold,
                 )
         },

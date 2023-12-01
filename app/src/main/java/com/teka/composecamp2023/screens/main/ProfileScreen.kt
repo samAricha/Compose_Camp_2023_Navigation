@@ -11,6 +11,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.ui.Alignment
 import androidx.navigation.NavController
 import com.teka.composecamp2023.navigation.ScreenRoutes
@@ -50,6 +51,14 @@ fun ProfileScreen(
                         .padding(top = 16.dp)
                 ) {
                     Text("TO HOME")
+                }
+
+                OutlinedButton(
+                    onClick = {
+                        navController.navigate(ScreenRoutes.LoginScreen.route)
+                    }
+                ) {
+                    Text("Log Out")
                 }
             }
 

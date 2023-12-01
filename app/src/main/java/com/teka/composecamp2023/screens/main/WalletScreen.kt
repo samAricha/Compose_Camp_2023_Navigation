@@ -36,8 +36,6 @@ fun WalletScreen(
 
         ){
             Text(text = "WALLET SCREEN")
-
-
         }
     }
 }
